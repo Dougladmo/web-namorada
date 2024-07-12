@@ -1,201 +1,147 @@
-.main-content {
-    width: 100%;
+.model-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    display: flex;
-}
-
-.register_wrapper {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-}
-
-.register_wrapper form {
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.register_wrapper h1 {
-    color: #FFC107;
-    text-transform: uppercase;
-    border: none;
-    font-weight: bold;
-    font-size: 48px;
-    font-weight: bold;
-    padding: 0px 50px;
-}
-
-.register_wrapper h2 {
-    text-align: center;
-    color: #FFC107;
-    text-transform: uppercase;
-    font-weight: bold;
-    border-bottom: 2px solid #FFC107;
-    font-size: 30px;
-    font-weight: bold;
-    padding: 2px 10px;
-    margin-bottom: 6px;
-}
-
-.register_wrapper p {
-    font-weight: 200;
-    text-align: center;
-    font-size: 13px;
-    color: #fff;
-    max-width: 80%;
-    margin-bottom: 22px;
-}
-
-.register_wrapper input[type="email"], 
-.register_wrapper input[type="password"],
-.register_wrapper input[type="number"],
-.register_wrapper input[type="text"] {
-    display: block;
-    background-color: #856400;
-    border: none;
-    text-indent: 15px;
-    box-shadow: 5px 5px 5px #00000041;
-    height: 48px;
-    width: 396px;
-    margin-bottom: 23px;
-    border-radius: 5px;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-.register_wrapper input::placeholder {
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.register_wrapper input[type="submit"] {
-    font-size: 15px;
-    font-weight: bold;
-    text-transform: uppercase;
-    width: 116px;
-    height: 39px;
-    border-radius: 20px;
-    border: none;
-    background-color: #FFC107;
-    box-shadow: 5px 5px 5px #00000041;
-    display: block;
-    margin: 0 auto;
-    transition: .3s;
-    border: 1px solid #FFC107;
-    margin-bottom: 50px;
-}
-
-.register_wrapper input[type="submit"]:hover{
-    background-color: transparent;
-    color: #FFC107;
-}
-
-.register_wrapper .register_ways {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 8px;
-}
-
-.register_ways p {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    font-size: 13px;
-    text-wrap: nowrap;
-    font-weight: 200;
-    margin-bottom: 1px;
-}
-
-.register_ways hr {
-    height: 1px;
-    width: 150px;
-    color: #FFC107;
-}
-
-.register_ways_icons {
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-
-.register_ways_icons a {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height:50px;
-    width: 50px;
-    border-radius: 100%;
-    transition: 0.5s;
-}
-
-.register_ways_icons a:hover {
-    background: #ffffff75;
-}
-
-.register_ways_icons a:first-child {
-    padding-top: 6px;
-}
-
-.termos-privacidade {
-    color: #fff;
-    max-width:70%;
-    text-justify: left;
-    gap: 10px;
-    font-size: 10px;
-    display: flex;
-    margin-bottom: 24px;
-}
-.termos-privacidade span {
-    color: #856400;
-}
-
-/* styles.css */
-
-.termos-privacidade {
-    display: flex;
-    align-items: center;
+    background-color: #1a1a1a;
   }
   
-  .termos-privacidade input[type="checkbox"] {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    min-width: 29px;
-    min-height: 29px;
-    background-color: black;
-    border: 1px solid #000;
+.model_register_form {
+    background-color: #333;
+    padding: 40px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+  }
+  
+.model_register_form h2 {
+    font-size: 32px;
+    color: #ffc107;
+    margin-bottom: 10px;
+  }
+  
+.model_register_form h3 {
+    color: #ffc107;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+.model_register_form p {
+    font-size: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+.model_register_form input[type="email"],
+.model_register_form input[type="text"],
+.model_register_form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+.model_register_form button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px;
+    border: none;
     border-radius: 5px;
     cursor: pointer;
-    position: relative;
+    width: 100%;
   }
   
-  .termos-privacidade input[type="checkbox"]:checked {
-    background-color: black;
-    background-image: url('../../images/Terms-checked.svg');
-    background-repeat: no-repeat;
-    background-position: center;
+.model_register_form button:hover {
+    background-color: #e0a800;
+  }
+  
+  .other-signup {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .signup-icons img {
+    width: 30px;
+    height: 30px;
+    margin: 0 10px;
+    cursor: pointer;
+  }
+  
+.model_register_form label {
+    color: #ffffff;
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+.model_register_form label input[type="checkbox"] {
+    margin-right: 10px;
+  }
+  
+  /* Modal styling */
+  .ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.75) !important;
+  }
+  
+  .ReactModal__Content {
+    text-align: left;
+    justify-content: left;
+    color: #333;
+    background-color: #333; /* Change the background color to #333 */
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 500px;
+    margin: auto;
+  }
+  
+  .ReactModal__Content h2 {
+    margin-bottom: 20px;
+    color: #ffc107;
+  }
+  
+  .ReactModal__Content form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .ReactModal__Content form textarea {
+    text-align: left;
+    font-size: 10px;
+    resize: none;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    opacity: 60%;
+  }
+  
+  .ReactModal__Content form input[type="file"] {
+    text-align: left;
+    justify-content: left;
+    padding: 5px;
+  }
+  
+  .ReactModal__Content form button {
+    background-color: #ffc107;
+    color: #333;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .ReactModal__Content form button:hover {
+    background-color: #e0a800;
   }
 
-.model_side_background {
-    width: 50%;
-    background-image: url("../../images/model_login_background.jpg");
-    background-position: top;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-    opacity: 25%;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
+  .ReactModal__Content p {
+    text-align: center;
+    font-size: 10px;
+    color: white;
+  }
+  

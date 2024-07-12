@@ -1,0 +1,64 @@
+.popUpEditar {
+    position: fixed;
+    background-color: #1b1b1b;
+    padding: 20px 50px;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    border-radius: 15px;
+    z-index: 50;
+}
+
+.popUpEditar h2 {
+    position: relative;
+    text-align: center;
+    color: #FFC107;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 28px;
+    border-bottom: 1px solid #FFC107;
+    font-weight: bold;
+    padding: 2px 70px;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+
+.popUpEditar svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+
+.popUpEditar form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.popUpEditar input {
+    text-indent: 10px;
+    padding: 6px 0;
+}
+
+.popUpEditar input[type="submit"] {
+    text-indent: 0;
+    width: 150px;
+    margin: 10px auto;
+    margin-bottom: 15px;
+    background-color: #FFC107;
+    padding: 6px 20px;
+    border: 1px solid #FFC107;
+    border-radius: 9px;
+    transition: 0.5s;
+}
+
+.popUpEditar input[type="submit"]:hover {
+    color: #FFC107;
+    background-color: #1b1b1b;
+}
+
+.popUpEditar h1 {
+    color: #fff;
+}

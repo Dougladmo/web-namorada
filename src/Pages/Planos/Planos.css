@@ -4,12 +4,12 @@
 }
 
 .explore_left_client {
-    width: 335px;
+    width: 250px;
     position: fixed;
 }
 
 .explore_right_client {
-    margin-left: 335px; 
+    margin-left: 250px; 
     padding: 45px 35px 20px 35px;
     width: calc(100% - 335px);
 }
@@ -28,18 +28,28 @@
     }
 
     .explore_left_client {
-        width: 100%;
+        display: block;
         position: relative;
+        width: 100%;
         margin-bottom: 20px;
     }
 
     .explore_right_client {
+        display: block;
         margin-left: 0;
-        width: 100%;
+        width: calc(100% - 1000px);
         padding: 20px; 
     }
 
     .planos {
         gap: 20px;
+        flex-wrap: none;
+    }
+}
+
+@media (max-width: 425px) {
+    .explore_right_client {
+        width: 100%;
+        margin: 0 !important;
     }
 }

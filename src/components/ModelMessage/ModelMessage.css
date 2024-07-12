@@ -2,8 +2,11 @@
     margin-top: 25px;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     padding: 0 22px;
+    max-width: 900px;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .model_message_wrapper img {
@@ -20,11 +23,7 @@
 .model_img_wrapper svg {
     position: absolute;
     left: 15px;
-    color: #14FF2C;
-}
-
-.model_message {
-    position: relative;
+    color: #00c914;
 }
 
 .model_message {
@@ -33,6 +32,8 @@
     background-color: #FFC107;
     padding: 16px 22px;
     border-radius: 15px;
+    margin-right: 60px; /* Ajuste para alinhar com o avatar */
+    font-family: 'Open Sans', sans-serif;
 }
 
 .model_message span {

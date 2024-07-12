@@ -1,27 +1,29 @@
 .message_sender {
     position: fixed;
-    bottom: 50px;
-    left: 60%;
+    bottom: 10px;
+    left: 59%;
     transform: translateX(-50%);
-    width: 50%;
+    width: 90%; /* Ajuste a largura conforme necessário */
+    max-width: 1000px; /* Limite a largura máxima */
     display: flex;
-    align-items: center;
+    align-items: left;
     border: none;
     border-radius: 25px;
     padding: 10px 22px;
-    background-color: #FFC107;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #333333; /* Tom de cinza escuro */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 1; /* Garante que a barra esteja acima das mensagens */
 }
 
 .file_input {
     margin-right: 10px;
     display: none;
-    /* Oculta o input de arquivo */
 }
 
 .file_icon {
     font-size: 26px;
     cursor: pointer;
+    color: #FFC107; /* Amarelo */
 }
 
 .text_input {
@@ -32,12 +34,12 @@
     padding: 10px 30px;
     font-size: 16px;
     border-radius: 25px;
-    text-indent: 10px;
+    color: #fff; /* Branco para o texto */
 }
 
 .send_button {
-    background-color: #292929;
-    color: #FFC107;
+    background-color: #292929; /* Preto */
+    color: #FFC107; /* Amarelo */
     border: none;
     display: flex;
     align-items: center;
@@ -50,16 +52,55 @@
 }
 
 .send_button:hover {
-    background-color: #FFC107;
-    color: #292929;
+    background-color: #FFC107; /* Amarelo ao passar o mouse */
+    color: #292929; /* Preto */
     border: 2px solid #292929;
 }
 
 @media (max-width: 1280px) {
     .message_sender {
-        position: fixed;
-        bottom: 50px;
-        left: 70%;
-        transform: translateX(-50%);
-    }    
+        width: 60%;
+    }
 }
+
+@media (max-width: 900px) {
+    .message_sender {
+        width: 55%;
+        left: 66%;
+        bottom: 50px;
+    }
+
+    .message_sender input {
+        width: 70%;
+    }
+    
+    .file_icon {
+        font-size: 18px;
+    }
+
+    .send_button {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 768px) {
+    .message_sender {
+        width: 90%;
+        bottom: 25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .message_sender input {
+        width: 70%;
+    }
+
+    .file_icon {
+        font-size: 14px;
+    }
+
+    .send_button {
+        font-size: 14px;
+    }
+}
+

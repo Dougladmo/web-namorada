@@ -44,3 +44,31 @@
         margin-top: 15px;
     }
 }
+
+@media (max-width: 1280px) {
+    .messages {
+        width: 90%;
+    }
+}
+
+@media (max-width: 900px) {
+    .messages {
+        width: 100%;
+        margin-right: 55px;
+        overflow-x: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .messages {
+        width: 360px;
+        margin-right: 180px;
+    }
+}
+
+@media (max-width: 425px) {
+    .messages {
+        width: 280px;
+        margin-left: 190px;
+    }
+}

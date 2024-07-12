@@ -1,25 +1,27 @@
-import React from 'react'
+// Pages/Chat/ChatPage.jsx
+import React from 'react';
+import { useParams } from 'react-router-dom';
+import SideBar from '../../components/SideBar/SideBar';
+import Messages from '../../components/Messages/Messages';
+import ChatComponent from '../../components/ChatComponent/ChatComponent';
+import './ChatPage.css';
 
-import SideBar from '../../components/SideBar/SideBar'
+const ChatPage = ({ username }) => {
+  const { modelId } = useParams();
 
-import './ChatPage.css'
-import Messages from '../../components/Messages/Messages'
-import ChatComponent from '../../components/ChatComponent/ChatComponent'
-
-const ChatPage = () => {
   return (
     <div className='explore_client'>
       <div className='explore_left_client'>
-        <SideBar handleMessages='active_mensagens' />
+        <SideBar username={username} handleMessages='active_mensagens' />
       </div>
       <div className='explore_right_client'>
         <div className='chat_wrapper'>
           <Messages />
-          <ChatComponent />
+          <ChatComponent modelId={modelId} />
         </div>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ChatPage
+export default ChatPage;

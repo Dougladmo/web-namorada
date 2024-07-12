@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
 
-import './SideBarNav.css'
+import './SideBarNav.css';
 
-const SideBarNav = ({modelos, planos, perfil, mensagens, config, suporte}) => {
+const SideBarNav = ({ modelos, planos, perfil, mensagens, config, suporte }) => {
   return (
     <div className='navbar'>
         <a className={`${modelos}`} href="/explore/">modelos</a>
@@ -15,4 +15,4 @@ const SideBarNav = ({modelos, planos, perfil, mensagens, config, suporte}) => {
   )
 }
 
-export default SideBarNav
+export default SideBarNav;

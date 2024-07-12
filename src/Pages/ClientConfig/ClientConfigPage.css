@@ -77,3 +77,22 @@
         padding: 0 15px;
 }
 }
+
+@media (max-width: 900px) {
+    .explore_right_client {
+        margin-left: 300px;
+        padding: 0 15px;
+}
+}
+
+@media (max-width: 768px) {
+    .explore_right_client {
+        margin-left: 350px;
+        padding: 0 15px;
+}
+    .config_card {
+        margin-top: 60px;
+        margin-bottom: 30px;
+    }
+}
+

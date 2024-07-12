@@ -1,23 +1,18 @@
-import React from 'react'
-import { FaHeart } from 'react-icons/fa'
+import React from 'react';
+import './ModelCard.css';
 
-import model from '../../images/client_register_background.jpg'
-
-import './ModelCard.css'
-
-const ModelCard = () => {
+const ModelCard = ({ nome, descricao, imagem }) => {
   return (
     <div className='card'>
         <div className='img_wrapper'>
-            <img src={model} alt="model image" />
-            <FaHeart />
+            <img style={{ width: '229px', height: '240px' }} src={`http://localhost:5000/uploads/${imagem}`} alt={`${nome}`} />
         </div>
         <div className='description'>
-            <h4>Katelyn</h4>
-            <p>Morena, 1,50 de Altura, Joga Tenis Gosta de passear e curtir um Shopping Joga Videogames e ama os animais</p>
+            <h4>{nome}</h4>
+            <p>{descricao}</p>
         </div>
     </div>
-  )
-}
+  );
+};
 
-export default ModelCard
+export default ModelCard;

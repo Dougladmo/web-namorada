@@ -1,10 +1,23 @@
+.plan_container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; /* Centraliza verticalmente */
+    min-height: 100vh; /* Garante que a altura mínima seja a altura da tela */
+    gap: 20px; /* Espaço entre os cards */
+    padding: 20px; /* Padding ao redor dos cards */
+}
+
 .plan_card {
     background-color: #292929;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 365px;
+    padding-bottom: 20px;
+    width: 250px; /* Ajuste o tamanho dos cards */
     border-radius: 15px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para os cards */
+    text-align: center; /* Centraliza o texto dentro dos cards */
 }
 
 .minutes {
@@ -15,8 +28,8 @@
     background-color: #FFC107;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
-    height: 85px;
-    font-size: 36px;
+    height: 60px; /* Altura ajustada */
+    font-size: 24px; /* Tamanho da fonte ajustado */
     text-transform: uppercase;
     font-weight: bolder;
     color: #000;
@@ -27,7 +40,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 54px;
+    margin-top: 20px; /* Margem ajustada */
 }
 
 .plan_caption p {
@@ -36,23 +49,24 @@
 }
 
 .price {
-    font-size: 48px;
+    font-size: 32px; /* Tamanho da fonte ajustado */
+    margin: 10px 0; /* Margem superior e inferior */
 }
 
 .plan_description {
-    font-size: 18px;
+    font-size: 14px; /* Tamanho da fonte ajustado */
+    margin-bottom: 10px; /* Margem inferior */
 }
 
 .assign-btn {
-    font-size: 18px;
+    font-size: 14px; /* Tamanho da fonte ajustado */
     text-decoration: none;
     color: #292929;
     background-color: #FFC107;
-    padding: 5px 32px;
+    padding: 8px 16px; /* Padding ajustado */
     border-radius: 999px;
     font-weight: bold;
-    margin-top: 10px;
-    margin-bottom: 58px;
+    margin-top: 20px; /* Espaço superior para o botão */
     border: 1px solid transparent;
     transition: 0.5s;
 }
@@ -62,3 +76,19 @@
     color: #FFC107;
     border-color: #FFC107;
 }
+
+@media (max-width: 768px) {
+    .plan_card {
+        padding-bottom: 30px;
+        width: 360px
+    }
+}
+
+@media (max-width: 425px) {
+    .plan_card {
+        padding: 10px;
+        padding-bottom: 30px;
+        width: 260px
+    }
+}
+

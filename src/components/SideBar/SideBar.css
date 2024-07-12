@@ -1,3 +1,4 @@
+/* Estilos para dispositivos maiores */
 .sidebar {
     position: fixed;
     z-index: 100;
@@ -9,6 +10,8 @@
     background: #292929;
     height: 100vh;
     padding: 21px 31px;
+    transition: transform 0.3s ease;
+    width: 250px; /* Adicionei largura fixa */
 }
 
 .logo_wrapper {
@@ -19,13 +22,40 @@
 }
 
 .user_profile {
-    border-top: 1px solid #FFC107;
-    border-bottom: 1px solid #FFC107;
-    padding: 18px 5px 21px 5px;
+    padding: 18px 5px 5px 5px;
     width: 100%;
     display: flex;
+    text-align: center;
     align-items: center;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.user_profile_toggle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #FFC107;
+}
+
+.logout_link {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #292929;
+    background-color: #FFC107;
+    padding: 4px 25px;
+    border-radius: 10px;
+    border: 1px solid #292929;
+    transition: 0.5s;
+    animation: slide-down 0.3s;
+}
+
+.logout_link:hover {
+    background-color: #292929;
+    color: #FFC107;
+    border-color: #FFC107;
 }
 
 .user_profile img:first-child {
@@ -49,7 +79,7 @@
     width: 45px;
 }
 
-.social-media a{
+.social-media a {
     display: flex;
     align-items: center;
     height: 45px;
@@ -58,4 +88,89 @@
 
 .social-media a:hover {
     border-bottom: 1px solid #FFC107;
+}
+
+/* Esconde o botão de menu em telas maiores */
+.menu-toggle {
+    display: none;
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    .top-sidebar svg {
+        margin-top: 10px;
+        font-size: 28px;
+        color: #fff;
+        position: absolute;
+        right: 50px;
+        top: 0;
+    }
+    .sidebar {
+        padding-top: 20px;
+        transform: translateX(-100%);
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        overflow: auto;
+    }
+
+    .sidebar.open {
+        transform: translateX(0);
+    }
+
+    .menu-toggle {
+        position: fixed;
+        top: 10px;
+        left: 10px;
+        background-color: #292929;
+        border: none;
+        color: #FFC107;
+        font-size: 28px;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        display: block;
+    }
+
+    .user_profile {
+        font-size: 12px;
+        max-width: 220px;
+    }
+
+
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    .navbar a {
+        width: 100%;
+        padding: 10px 20px;
+    }
+}
+
+@keyframes slide-down {
+    0% {
+        transform: translateY(-50%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 425px) {
+    .logo_wrapper {
+        margin-top: -4s0px;
+        display: flex; 
+        justify-content: center;
+        align-items: center;
+    }
+    .logo_wrapper img:last-child {
+        width: 160px;
+    }
+    .social-media {
+        margin-top: 22px;
+    }
 }
